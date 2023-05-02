@@ -8,7 +8,18 @@
         Title="Klevtsov_4335" Height="450" Width="800">
     <Grid>
         <TextBox HorizontalAlignment="Left" Margin="160,155,0,0" TextWrapping="Wrap" Text="Изменения выполнил студент группы 4335 Клевцов Ярослав
-" VerticalAlignment="Top" Width="349" TextChanged="TextBox_TextChanged"/>
+" VerticalAlignment="Top" Width="349" />
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="207,241,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,50">
+                <Button Content="Импорт JSON данных" Width="auto" Height="NaN"  x:Name="Import" Click="Import_Click" Margin="0,0,80,0"/>
+                <Button Content="Экспорт в Word" Width="Auto" Height="Auto"   x:Name="Export" Click="Export_Click" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <Button x:Name="Import1" Content="Импорт Excel данных" Click="Import_Click_1" Height="NaN" Width="NaN"  Margin="0,0,80,0"/>
+                <Button x:Name="Export1" Content="Экспорт в Excel" Click="Export_Click_1" Height="NaN"  Width="101"/>
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 </Window>
